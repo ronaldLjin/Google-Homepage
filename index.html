@@ -84,7 +84,7 @@
     input[type=text] {
         position: fixed;
         left: 3rem;
-        width: 30rem;
+        width: 80%;
         height: 3rem;
         font-size: 16px;
         border: 0px;
@@ -124,13 +124,18 @@
     .container4 {
         display: flex;
         justify-content: space-between;
-        margin: 17px;
         margin-left: 30px;
         margin-right: 30px;
         flex-shrink: 0;
         align-items: center;
         font-size: 14px;
         flex-wrap: wrap;
+    }
+
+    @media (max-width: 1200px) {
+        .container4 {
+            justify-content: space-around;
+        }
     }
 
     .advertising, .business, .privacy, .terms {
@@ -141,6 +146,10 @@
         text-decoration: none;
         color: #70757a;
     }
+
+    .advertising:hover, .business:hover,  .hsw:hover, .privacy:hover, .terms:hover, .settings:hover{
+        text-decoration: underline;
+    }
     
     footer {
     bottom : 0;
@@ -149,6 +158,10 @@
     left:0;
     background-color: #f2f2f2;
     border-top: 1px solid #DFE1E5;
+  }
+
+  .test {
+    margin:17px 0px 17px 0px; 
   }
 </style>
 
@@ -198,13 +211,13 @@
 
 <footer>
     <div class="container4">
-    <div>
+    <div class="test">
         <a href="#" class="advertising">Advertising</a>
         <a href="#" class="business">Business</a>
         <a href="#" class="hsw">How Search Works</a>
         </div>
 
-        <div class="container2">
+        <div class="container2 test">
         <a href="#" class="privacy">Privacy</a>
         <a href="#" class="terms">Terms</a>
         <a href="#" class="settings">Settings</a>
