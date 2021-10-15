@@ -1,3 +1,3 @@
-This is my first attempt at using HTML and CSS to create a webpage, specifically the Google homepage.
+This is my first attempt at replicating a web-design using HTML and CSS.
 
 Preview: [click here](https://ronaldljin.github.io/google-homepage/)
